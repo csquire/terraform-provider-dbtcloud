@@ -74,6 +74,7 @@ func SDKProvider(version string) func() *schema.Provider {
 				"dbtcloud_environment_variable_job_override": resources.ResourceEnvironmentVariableJobOverride(),
 				"dbtcloud_fabric_connection":                 resources.ResourceFabricConnection(),
 				"dbtcloud_fabric_credential":                 resources.ResourceFabricCredential(),
+				"dbtcloud_synapse_credential":                resources.ResourceSynapseCredential(),
 			},
 			ConfigureContextFunc: providerConfigure,
 		}
